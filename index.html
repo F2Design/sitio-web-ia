@@ -1,39 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Mi Página Web</title>
+    <title>Fredy Frasser - Portafolio</title>
+    <style>
+        /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #22BAD9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header img {
+    width: 200px; /* Ajusta el ancho según tu preferencia */
+    height: 200px; /* Ajusta el alto según tu preferencia */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin: 10px;
+    float: left;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los proyectos */
+.proyecto {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FF7C00;
+}
+
+/* Estilos de la lista de habilidades */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos de enlaces */
+a {
+    color: #0074e4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del encabezado h2 */
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Estilos de los párrafos en las secciones */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Estilos de las listas de habilidades */
+li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+#contacto {
+    padding: 50px;
+    background-color: #2C3E50;
+}
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Enlaza tu archivo de estilos CSS -->
 </head>
+
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen de cabecera">
+        <h1>Fredy Frasser</h1>
+        <p>Diseñador Gráfico y Diseñador de Interfaz de Usuario</p>
     </header>
-    <nav>
+
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p>Soy un apasionado diseñador gráfico y especialista en diseño de interfaz de usuario (UI). Mi objetivo es...</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2.</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li>Diseño Gráfico</li>
+            <li>Diseño de Interfaz de Usuario (UI)</li>
+            <li>Adobe Creative Suite</li>
+            <li>HTML y CSS</li>
         </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Acerca de nosotros</h2>
-            <p>Somos una empresa ficticia dedicada a hacer ejemplos de sitios web.</p>
-        </section>
-        <section>
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li>Diseño web</li>
-                <li>Desarrollo web</li>
-                <li>Optimización SEO</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Mi Página Web</p>
-    </footer>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡No dudes en ponerte en contacto conmigo! Puedes encontrarme en [tu correo electrónico] o en [tus redes sociales].</p>
+    </section>
 </body>
 </html>
